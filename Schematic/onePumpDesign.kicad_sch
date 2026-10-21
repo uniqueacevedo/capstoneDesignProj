@@ -1,0 +1,5094 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "8d7a4bfe-7a7c-41d5-951e-5c9c92694499")
+	(paper "A3")
+	(title_block
+		(title "Fish Flow - One Pump Closed-Loop Controller")
+		(rev "0.2 - FL408NPT, bench-test required")
+		(company "Rutgers Capstone")
+	)
+	(lib_symbols
+		(symbol "Capstone:ARD"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 20.1 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Value" "ARD"
+				(at 0 -20.2 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ARD_0_1"
+				(rectangle
+					(start -18 16)
+					(end 18 -16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "ARD_1_1"
+				(pin passive line
+					(at 23.08 10.16 180)
+					(length 5.08)
+					(name "D9"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 23.08 5.08 180)
+					(length 5.08)
+					(name "D2"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 23.08 0 180)
+					(length 5.08)
+					(name "A0"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 23.08 -5.08 180)
+					(length 5.08)
+					(name "5V"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 23.08 -10.16 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Capstone:C"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 5.6 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Value" "C"
+				(at 0 -5.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -0.9 2.8) (xy -0.9 -2.8)
+					)
+					(stroke
+						(width 0.4)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.9 2.8) (xy 0.9 -2.8)
+					)
+					(stroke
+						(width 0.4)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at -8.08 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 8.08 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Capstone:FUSE"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 0 6.1 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Value" "FUSE"
+				(at 0 -6.2 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FUSE_0_1"
+				(rectangle
+					(start -4.5 1.8)
+					(end 4.5 -1.8)
+					(stroke
+						(width 0.25)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FUSE_1_1"
+				(pin passive line
+					(at -9.58 0 0)
+					(length 5.08)
+					(name "IN"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 9.58 0 180)
+					(length 5.08)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Capstone:LM358"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 20.6 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Value" "LM358"
+				(at 0 -20.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LM358_0_1"
+				(rectangle
+					(start -15.5 16.5)
+					(end 15.5 -16.5)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "LM358_1_1"
+				(pin passive line
+					(at 20.58 11.43 180)
+					(length 5.08)
+					(name "OUT_A"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -20.58 6.35 0)
+					(length 5.08)
+					(name "-_A"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -20.58 11.43 0)
+					(length 5.08)
+					(name "+_A"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.58 1.27 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -20.58 -1.27 0)
+					(length 5.08)
+					(name "+_B"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -20.58 -6.35 0)
+					(length 5.08)
+					(name "-_B"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.58 -6.35 180)
+					(length 5.08)
+					(name "OUT_B"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.58 6.35 180)
+					(length 5.08)
+					(name "V+"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Capstone:NPN"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 0 14.6 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Value" "NPN"
+				(at 0 -14.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "NPN_0_1"
+				(rectangle
+					(start -9.5 10.5)
+					(end 9.5 -10.5)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "NPN_1_1"
+				(pin passive line
+					(at -14.58 5.08 0)
+					(length 5.08)
+					(name "B"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "B"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 14.58 0 180)
+					(length 5.08)
+					(name "C"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "C"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -14.58 -5.08 0)
+					(length 5.08)
+					(name "E"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "E"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Capstone:PNP"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 0 14.6 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Value" "PNP"
+				(at 0 -14.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PNP_0_1"
+				(rectangle
+					(start -9.5 10.5)
+					(end 9.5 -10.5)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "PNP_1_1"
+				(pin passive line
+					(at -14.58 0 0)
+					(length 5.08)
+					(name "B"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "B"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 14.58 0 180)
+					(length 5.08)
+					(name "C"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "C"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -14.58 6.35 0)
+					(length 5.08)
+					(name "E"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "E"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Capstone:PUMP"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 11.6 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Value" "PUMP"
+				(at 0 -11.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PUMP_0_1"
+				(rectangle
+					(start -13 7.5)
+					(end 13 -7.5)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "PUMP_1_1"
+				(pin passive line
+					(at -18.08 3.81 0)
+					(length 5.08)
+					(name "PUMP+"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -18.08 -3.81 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Capstone:R"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 5.6 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 -5.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -3 1.5)
+					(end 3 -1.5)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at -8.08 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 8.08 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Capstone:SENSOR"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 16.1 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Value" "SENSOR"
+				(at 0 -16.2 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SENSOR_0_1"
+				(rectangle
+					(start -14.5 12)
+					(end 14.5 -12)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SENSOR_1_1"
+				(pin passive line
+					(at -19.58 7.62 0)
+					(length 5.08)
+					(name "RED_5V"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -19.58 0 0)
+					(length 5.08)
+					(name "BLACK_GND"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -19.58 -7.62 0)
+					(length 5.08)
+					(name "YELLOW_D2"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Capstone:SRC"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 11.6 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Value" "SRC"
+				(at 0 -11.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SRC_0_1"
+				(rectangle
+					(start -11.5 7.5)
+					(end 11.5 -7.5)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SRC_1_1"
+				(pin passive line
+					(at 16.58 3.81 180)
+					(length 5.08)
+					(name "24V"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 16.58 -3.81 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Capstone:SW"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "S"
+				(at 0 6.1 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Value" "SW"
+				(at 0 -6.2 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2 1.2)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_0_1"
+				(polyline
+					(pts
+						(xy -4.5 0) (xy -1.2 0) (xy 2.7 2.1)
+					)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.4 0)
+					(radius 0.6)
+					(stroke
+						(width 0.25)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_1_1"
+				(pin passive line
+					(at -9.58 0 0)
+					(length 5.08)
+					(name "IN"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 9.58 0 180)
+					(length 5.08)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.05 1.05)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "A. 24V POWER + PUMP"
+		(exclude_from_sim no)
+		(at 25 38 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e4576e4-aca1-4a7c-9c11-4db7e9c45638")
+	)
+	(text "FL-408NPT flow sensor: RED Arduino 5V; BLACK GND; YELLOW D2; f(Hz)=7.5 x flow(L/min)."
+		(exclude_from_sim no)
+		(at 25 281 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+			)
+			(justify left bottom)
+		)
+		(uuid "8eb1a2d4-1153-49ba-95c1-67001827e1ef")
+	)
+	(text "B. LM358 CONTROLS PUMP VOLTAGE"
+		(exclude_from_sim no)
+		(at 25 118 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "a8440405-ebc6-4758-af0b-6e674f2d10be")
+	)
+	(text "C. ARDUINO COMMAND AND MEASURED VOLTAGE"
+		(exclude_from_sim no)
+		(at 25 210 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0816820-71c7-45bd-81fb-0f952ff1fb9b")
+	)
+	(wire
+		(pts
+			(xy 186.08 224) (xy 193.7 224)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0097d51f-304e-42fb-b695-33351a243292")
+	)
+	(wire
+		(pts
+			(xy 347.92 58.19) (xy 340.3 58.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f7e96ab-605c-4923-a9f4-a333cbbed8c1")
+	)
+	(wire
+		(pts
+			(xy 318.08 224) (xy 325.7 224)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "104da086-d853-497e-b78a-7a81b15b04eb")
+	)
+	(wire
+		(pts
+			(xy 97.42 162.27) (xy 89.8 162.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1273ad2f-baf1-4c0b-9eea-9f8ac9433f6f")
+	)
+	(wire
+		(pts
+			(xy 76.08 255.16) (xy 83.7 255.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14412e98-7cfe-4bfd-adb0-d83fc9f58c5a")
+	)
+	(wire
+		(pts
+			(xy 301.92 245) (xy 294.3 245)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14446f8b-8945-4771-b73d-94e07297cd72")
+	)
+	(wire
+		(pts
+			(xy 357.08 92) (xy 364.7 92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17491eec-9957-4a4d-b14f-25a970d1f868")
+	)
+	(wire
+		(pts
+			(xy 121.92 245) (xy 114.3 245)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c817c19-bea8-45b1-94df-2feb4e80993b")
+	)
+	(wire
+		(pts
+			(xy 174.08 91) (xy 181.7 91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20ced15b-cc20-4d6d-8478-9048940c47f6")
+	)
+	(wire
+		(pts
+			(xy 256.92 92) (xy 249.3 92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24d537ee-6360-45dd-9e57-86942aa90136")
+	)
+	(wire
+		(pts
+			(xy 138.58 167.35) (xy 146.2 167.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "272dfa05-d382-4340-baa0-53acda437882")
+	)
+	(wire
+		(pts
+			(xy 76.08 239.92) (xy 83.7 239.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27acd760-844d-4242-bf0f-aeab88da94bd")
+	)
+	(wire
+		(pts
+			(xy 76.08 250.08) (xy 83.7 250.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b4465a4-2b3e-4d42-83e1-51714d462db8")
+	)
+	(wire
+		(pts
+			(xy 210.08 161) (xy 217.7 161)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d84ba91-4f57-46f9-be52-8b5398b64d16")
+	)
+	(wire
+		(pts
+			(xy 209.92 245) (xy 202.3 245)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d8d4c03-9b06-4903-b51b-49cb8888cdc2")
+	)
+	(wire
+		(pts
+			(xy 210.08 184) (xy 217.7 184)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d93294f-f235-49fc-931d-3331541c9bba")
+	)
+	(wire
+		(pts
+			(xy 258.92 224) (xy 251.3 224)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "326e61f2-74e8-4a6b-be6e-07315d394119")
+	)
+	(wire
+		(pts
+			(xy 97.42 154.65) (xy 89.8 154.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33679897-1754-49f9-a752-850f58a0d66a")
+	)
+	(wire
+		(pts
+			(xy 193.92 184) (xy 186.3 184)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4157655c-2eec-4514-9605-0cc8a29e6495")
+	)
+	(wire
+		(pts
+			(xy 303.92 92) (xy 296.3 92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44025412-6a50-45b1-ab3b-467c5ab88c0c")
+	)
+	(wire
+		(pts
+			(xy 121.92 224) (xy 114.3 224)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47121425-8c03-4d76-8111-a8cb803754f5")
+	)
+	(wire
+		(pts
+			(xy 348.92 266) (xy 341.3 266)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cd4e532-c517-402a-9cf3-b67452a78f82")
+	)
+	(wire
+		(pts
+			(xy 258.92 245) (xy 251.3 245)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "513c31ad-455d-4c81-9a8b-26c145c49c35")
+	)
+	(wire
+		(pts
+			(xy 210.08 143) (xy 217.7 143)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52d34c6c-e15c-4e45-9c9c-ae41e643be71")
+	)
+	(wire
+		(pts
+			(xy 53.58 61.19) (xy 61.2 61.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53e7f43d-aad8-4b32-bc4b-acd729c74bab")
+	)
+	(wire
+		(pts
+			(xy 175.58 61) (xy 183.2 61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56ee77b9-dcc0-482b-91ee-4598da8b4a28")
+	)
+	(wire
+		(pts
+			(xy 91.42 61) (xy 83.8 61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "573b8cfa-8ad2-4307-9b93-b3a55a490978")
+	)
+	(wire
+		(pts
+			(xy 275.08 245) (xy 282.7 245)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62384bb9-f482-49f2-a5f9-a9dcd581a713")
+	)
+	(wire
+		(pts
+			(xy 313.58 146) (xy 321.2 146)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62a26b95-6458-4b98-88f0-352b8a6833ae")
+	)
+	(wire
+		(pts
+			(xy 301.92 224) (xy 294.3 224)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62fe48cf-213a-4d64-a7c7-1b6db12f0a2c")
+	)
+	(wire
+		(pts
+			(xy 284.42 140.92) (xy 276.8 140.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "692b7bcb-d4b9-440c-b3a3-fe27f6b71439")
+	)
+	(wire
+		(pts
+			(xy 340.92 92) (xy 333.3 92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d3cbd1e-ae34-4c07-9b95-69f870403568")
+	)
+	(wire
+		(pts
+			(xy 138.08 245) (xy 145.7 245)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7439bcea-b5ba-4961-93e2-af207226f173")
+	)
+	(wire
+		(pts
+			(xy 169.92 224) (xy 162.3 224)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c2c91be-8833-4edc-8734-18aa7c3f6553")
+	)
+	(wire
+		(pts
+			(xy 275.08 224) (xy 282.7 224)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c6ed575-0679-486b-987b-3d5c70a35ce8")
+	)
+	(wire
+		(pts
+			(xy 284.42 151.08) (xy 276.8 151.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ed275af-ca29-4a23-83d0-03601ca319f0")
+	)
+	(wire
+		(pts
+			(xy 157.92 91) (xy 150.3 91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ef00ac5-4836-401c-80b4-376ded15231d")
+	)
+	(wire
+		(pts
+			(xy 273.08 92) (xy 280.7 92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "801d6c21-a9e9-4038-9f62-999c6c884e2b")
+	)
+	(wire
+		(pts
+			(xy 138.58 159.73) (xy 146.2 159.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "833bc28e-aeb0-46cf-b806-b822aa4463dc")
+	)
+	(wire
+		(pts
+			(xy 226.08 245) (xy 233.7 245)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85474054-ee08-4882-8e27-7ffa762a94e5")
+	)
+	(wire
+		(pts
+			(xy 350.42 243) (xy 342.8 243)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a2bf4ae-4759-4896-a1eb-2f6ca7e180f3")
+	)
+	(wire
+		(pts
+			(xy 138.58 149.57) (xy 146.2 149.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c9aa3c4-426a-42c6-936d-18f07b89993d")
+	)
+	(wire
+		(pts
+			(xy 138.58 154.65) (xy 146.2 154.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97306f41-bbde-436b-99b2-9edea4627a12")
+	)
+	(wire
+		(pts
+			(xy 251.42 55.65) (xy 243.8 55.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97ecfc79-cb83-4b27-9a06-6c76593ad5b3")
+	)
+	(wire
+		(pts
+			(xy 280.58 62) (xy 288.2 62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fb9fdd3-791d-49ce-9809-716ff8c9a6ff")
+	)
+	(wire
+		(pts
+			(xy 53.58 68.81) (xy 61.2 68.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a05f82e2-ab35-4e0a-9343-1cb5d58a3e16")
+	)
+	(wire
+		(pts
+			(xy 126.08 91) (xy 133.7 91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a18854b7-748f-4e55-a444-54e7efaa3feb")
+	)
+	(wire
+		(pts
+			(xy 156.42 61) (xy 148.8 61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a33082dc-82ae-4da6-99c5-75f5815954e1")
+	)
+	(wire
+		(pts
+			(xy 251.42 62) (xy 243.8 62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b01ffcf4-b41d-43a8-b2e8-af61d2839eb9")
+	)
+	(wire
+		(pts
+			(xy 169.92 245) (xy 162.3 245)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4bac7b6-3768-445e-9d5a-a6f673f9215f")
+	)
+	(wire
+		(pts
+			(xy 365.08 266) (xy 372.7 266)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6925171-bbce-4655-91a0-d7e9eaea5f39")
+	)
+	(wire
+		(pts
+			(xy 110.58 61) (xy 118.2 61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba33de1c-4454-4e3d-bad1-0784358b01b0")
+	)
+	(wire
+		(pts
+			(xy 109.92 91) (xy 102.3 91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc27525e-c987-4d54-9324-762af13bf195")
+	)
+	(wire
+		(pts
+			(xy 347.92 65.81) (xy 340.3 65.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf36dc58-d84e-429f-93e2-a566483d7822")
+	)
+	(wire
+		(pts
+			(xy 76.08 245) (xy 83.7 245)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2f2cc67-31d7-4714-9d75-b630ed290f90")
+	)
+	(wire
+		(pts
+			(xy 193.92 161) (xy 186.3 161)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c36b1c6b-86e0-4c51-947f-287dd96e949a")
+	)
+	(wire
+		(pts
+			(xy 97.42 149.57) (xy 89.8 149.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4068f4e-3f3d-4d49-8ff3-411ffb72b753")
+	)
+	(wire
+		(pts
+			(xy 193.92 143) (xy 186.3 143)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc7ddcbc-976a-4806-844b-249396c3b40b")
+	)
+	(wire
+		(pts
+			(xy 350.42 250.62) (xy 342.8 250.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd8f9306-275a-4e32-a3d8-11348b232ca4")
+	)
+	(wire
+		(pts
+			(xy 399.08 92) (xy 406.7 92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3967d4d-d091-450c-8169-140447476b78")
+	)
+	(wire
+		(pts
+			(xy 382.92 92) (xy 375.3 92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3bdc741-e3d0-4d04-88d5-3d1a55b63876")
+	)
+	(wire
+		(pts
+			(xy 97.42 167.35) (xy 89.8 167.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e17a91df-6933-45c5-8c8f-d9d322cdb6bd")
+	)
+	(wire
+		(pts
+			(xy 186.08 245) (xy 193.7 245)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e53b4f5d-8695-4df4-a7eb-6105fccd5f36")
+	)
+	(wire
+		(pts
+			(xy 320.08 92) (xy 327.7 92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e628ec13-137c-4a40-a57a-089dd9e0eab6")
+	)
+	(wire
+		(pts
+			(xy 318.08 245) (xy 325.7 245)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea6138af-a2b5-424b-a315-9f373bd4b270")
+	)
+	(wire
+		(pts
+			(xy 138.08 224) (xy 145.7 224)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eaa9d2c7-b4b0-42e8-a6a8-34c936f0264e")
+	)
+	(wire
+		(pts
+			(xy 76.08 234.84) (xy 83.7 234.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f70408f0-cc61-4add-952a-a24db4de7563")
+	)
+	(wire
+		(pts
+			(xy 350.42 235.38) (xy 342.8 235.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd6dd140-3a29-434a-a4af-b1e0fbdec5fc")
+	)
+	(label "PUMP_POS"
+		(at 340.3 58.19 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "0fe2f404-4d57-4acb-aab9-53c0aed2ac0d")
+	)
+	(label "PWM_D9"
+		(at 83.7 234.84 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "1621e912-3eb9-4c54-98de-e016331718fc")
+	)
+	(label "GND"
+		(at 364.7 92 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "18eeb64c-4b67-4e9a-97d0-117cc7737d14")
+	)
+	(label "FB"
+		(at 282.7 224 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b0f9003-d917-473c-af91-946344b42dd6")
+	)
+	(label "OP_OUT"
+		(at 186.3 184 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b341b93-deaf-4415-8bae-83736bb89697")
+	)
+	(label "GND"
+		(at 340.3 65.81 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "1d3a4562-3fb1-4208-aaf9-aadf659a65f3")
+	)
+	(label "NPN_BASE"
+		(at 276.8 140.92 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "2496b913-3d0c-477b-8ef5-b526b72a9ba2")
+	)
+	(label "VIN24"
+		(at 183.2 61 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "263bd378-845f-4b3c-b4c8-0b6612b562a7")
+	)
+	(label "GND"
+		(at 146.2 159.73 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "290fb56d-c20f-449e-948d-c6f72d735135")
+	)
+	(label "GND"
+		(at 193.7 245 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "2c07bdcf-049d-44db-959f-f87eea123814")
+	)
+	(label "PUMP_POS"
+		(at 288.2 62 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "2c64b9f4-530b-4956-8894-43a0f80bd1a7")
+	)
+	(label "GND"
+		(at 133.7 91 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "32d677e0-ea71-4a64-a0aa-819ffabe0662")
+	)
+	(label "Q2_COL"
+		(at 321.2 146 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "35101574-1259-4987-a2fb-9ae2ef63e0a5")
+	)
+	(label "PUMP_POS"
+		(at 333.3 92 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "36533221-c6da-4a8c-8537-e4586a4b5286")
+	)
+	(label "ARD_5V"
+		(at 342.8 235.38 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "403fcc52-1d8a-4510-84b2-f07fbee38966")
+	)
+	(label "GND"
+		(at 89.8 162.27 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "40e2b892-dfa3-4526-9ba2-243f53965e9d")
+	)
+	(label "GND"
+		(at 83.7 255.16 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "465bf61f-8eb0-4e64-a2de-f200cc5ae5a9")
+	)
+	(label "UB_HOLD"
+		(at 89.8 167.35 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "526bc5bd-4819-4705-82a0-6c4703cb5e83")
+	)
+	(label "GND"
+		(at 181.7 91 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a6f4e35-6d1f-4c5a-8000-face8e7bef24")
+	)
+	(label "GND"
+		(at 217.7 161 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "607a0c74-f2d0-4d90-8ab4-cbaa30d98cff")
+	)
+	(label "FUSED_24V"
+		(at 118.2 61 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "656201c3-c02d-4d1b-b50f-effb54de703c")
+	)
+	(label "LP1"
+		(at 145.7 224 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "668d897d-6201-4c46-a4b8-e687badd44f5")
+	)
+	(label "RAW_24V"
+		(at 61.2 61.19 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "6772cb27-964d-4c08-b53f-ecf38047a6de")
+	)
+	(label "VIN24"
+		(at 243.8 55.65 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "6bede490-8ea1-4e21-afc1-04ee097902bd")
+	)
+	(label "RAW_24V"
+		(at 83.8 61 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "6cb02562-c6c3-4f9a-bece-83d3469c1f4b")
+	)
+	(label "PASS_BASE"
+		(at 296.3 92 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "716bb448-3088-432f-8214-3cc4e25d0127")
+	)
+	(label "UB_HOLD"
+		(at 146.2 167.35 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "7216eb49-e69d-4a41-b6bf-f49305b5864f")
+	)
+	(label "REF"
+		(at 89.8 149.57 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "8228d34e-a7b2-4b64-b248-5866a945d002")
+	)
+	(label "ARD_A0"
+		(at 83.7 245 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "83600359-c042-4779-91a4-fc6e8b5c0415")
+	)
+	(label "VIN24"
+		(at 102.3 91 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "8af9a0ab-1dff-4bd8-b150-c27bd1873d2a")
+	)
+	(label "ARD_A0"
+		(at 294.3 245 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "9135e623-ac38-4915-bb32-bf5a60bcde2f")
+	)
+	(label "FUSED_24V"
+		(at 148.8 61 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "93a77950-15fb-4083-8339-8d199b342a8b")
+	)
+	(label "LP1"
+		(at 114.3 245 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "9d6932fc-05c0-4512-820f-568b83451f44")
+	)
+	(label "VIN24"
+		(at 146.2 154.65 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "a0721fdb-5ab6-4b86-bab8-7b105b120fe1")
+	)
+	(label "PASS_BASE"
+		(at 243.8 62 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "a182c78c-6757-4b51-a444-b20a9ea87a4b")
+	)
+	(label "PUMP_POS"
+		(at 375.3 92 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "a270c2d4-b5bb-4217-9c6c-4b89105b788c")
+	)
+	(label "REF"
+		(at 202.3 245 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "a492c1ae-1e69-457b-a21f-7f7af96fd4f3")
+	)
+	(label "FLOW_D2"
+		(at 83.7 239.92 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "a96e038d-f3a6-4019-a5a4-9698672b9cda")
+	)
+	(label "ARD_5V"
+		(at 83.7 250.08 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "afd0b347-25d5-43bd-995d-741ad4e3c87b")
+	)
+	(label "Q2_COL"
+		(at 327.7 92 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "bfe0c06e-0a94-4968-b8de-2b3c14d7d0af")
+	)
+	(label "REF"
+		(at 193.7 224 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "c59f0734-3d28-4f12-bda9-d0feecaf35ba")
+	)
+	(label "FLOW_D2"
+		(at 342.8 250.62 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "c74ade7c-b596-453f-9a19-67bfb90aa726")
+	)
+	(label "PASS_BASE"
+		(at 280.7 92 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "c9f191a5-8604-4cd5-b6ff-ff84e41bb7df")
+	)
+	(label "ARD_A0"
+		(at 282.7 245 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb025acc-12bb-4ff8-812d-847bf31f39de")
+	)
+	(label "GND"
+		(at 325.7 224 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "cba7d56a-f0e6-4ad1-b811-468b128616a6")
+	)
+	(label "OP_OUT"
+		(at 186.3 143 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "ce21a6e1-0809-4998-a229-735dd6d8546f")
+	)
+	(label "GND"
+		(at 233.7 245 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "cea92391-bc32-4671-bd83-cf759394c868")
+	)
+	(label "GND"
+		(at 342.8 243 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "cf6ab59e-883b-441a-8256-0a3f1d0d404a")
+	)
+	(label "LP1"
+		(at 162.3 224 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "d00a418a-0588-47f8-b504-57bb3bada79b")
+	)
+	(label "OP_OUT"
+		(at 146.2 149.57 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "d2804d53-07d8-47e9-b01c-554e85ca022a")
+	)
+	(label "NPN_BASE"
+		(at 217.7 143 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "de41be72-53fa-40d8-8d04-81cb71d8f30c")
+	)
+	(label "PWM_D9"
+		(at 114.3 224 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "de71ade1-5722-4f20-b2fb-22d1313b76f2")
+	)
+	(label "ARD_5V"
+		(at 341.3 266 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "e18fbb5e-f2ea-4eb9-99b0-61c2bdae3360")
+	)
+	(label "NPN_BASE"
+		(at 186.3 161 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "e1c9384e-5c18-4309-b47f-020156e64723")
+	)
+	(label "VIN24"
+		(at 150.3 91 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "e1d7528b-66c5-4fae-b012-3dfa0423adcb")
+	)
+	(label "GND"
+		(at 276.8 151.08 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "e226889b-7976-49b6-bc65-a05d008b3ddd")
+	)
+	(label "GND"
+		(at 145.7 245 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2e5467e-2799-400b-965b-af0d29b10242")
+	)
+	(label "GND"
+		(at 406.7 92 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2e90fbd-a152-4a94-b206-8b13844902b9")
+	)
+	(label "GND"
+		(at 325.7 245 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "e6caf449-4489-400a-bf80-c4ae434ff600")
+	)
+	(label "FB"
+		(at 89.8 154.65 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "eaf42272-2bb7-4125-9842-16cc440b09e7")
+	)
+	(label "FB"
+		(at 251.3 245 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "ebdd9012-c78d-4b43-aee6-f670096de6a0")
+	)
+	(label "FB"
+		(at 217.7 184 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "f13a5e9a-e28e-4e3a-8308-47e67f446cb1")
+	)
+	(label "FB"
+		(at 294.3 224 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "f22cc199-a690-4b37-a24f-464b184cde4c")
+	)
+	(label "REF"
+		(at 162.3 245 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "f23f16b2-cf69-4d4e-85d2-b123554bc50a")
+	)
+	(label "VIN24"
+		(at 249.3 92 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "f28e2ce7-c8fa-43c8-be3d-0e7f242a9ca9")
+	)
+	(label "FLOW_D2"
+		(at 372.7 266 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "f3389f7e-33db-4227-8a8a-4f2c877d8460")
+	)
+	(label "PUMP_POS"
+		(at 251.3 224 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "f5c60bb0-aff2-430e-956c-f3a81bfa0023")
+	)
+	(label "GND"
+		(at 61.2 68.81 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left bottom)
+		)
+		(uuid "fe4f164c-27c8-407e-8afb-5a04a0a09619")
+	)
+	(symbol
+		(lib_id "Capstone:R")
+		(at 310 224 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "05a5e289-094d-43eb-98cf-a54fface6510")
+		(property "Reference" "R6"
+			(at 310 220 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 310 222.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 310 224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 310 224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 310 224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "98ad5249-f65e-46eb-9bcf-29474cca5888")
+		)
+		(pin "2"
+			(uuid "cf1fda25-fa6c-42b0-9453-5e749c580dec")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:R")
+		(at 312 92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "16da8f39-3d69-4ae1-b1cc-e7310dade4a9")
+		(property "Reference" "R2"
+			(at 312 88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "470R / 3W"
+			(at 312 90.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 312 92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 312 92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 312 92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "519384b9-3938-43de-b6af-551e36137ce6")
+		)
+		(pin "2"
+			(uuid "256b1c50-d650-4cd1-bf81-1d1d6de35050")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:C")
+		(at 310 245 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "193b3a30-37a4-48db-bdf7-5b1f373be384")
+		(property "Reference" "C7"
+			(at 310 241 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 310 243.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 310 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 310 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 310 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0119eace-b7e7-452c-891f-362083558b1a")
+		)
+		(pin "2"
+			(uuid "6bebaaf0-d4ab-4683-9ee6-00073a08e9df")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:SRC")
+		(at 37 65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3db56e5a-3b94-46c1-9242-0a43816592c7")
+		(property "Reference" "J1"
+			(at 50.5 59.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "24V lab source"
+			(at 50.5 62.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 37 65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 37 65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 37 65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ecc20d44-bfe9-423a-bebe-22d2c14fc754")
+		)
+		(pin "2"
+			(uuid "b0f93719-cf2c-4b6d-88ec-c914c7e59b81")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:R")
+		(at 218 245 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "453ef94a-31dc-46ea-a004-18a936d08eab")
+		(property "Reference" "R9"
+			(at 218 241 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 218 243.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 218 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e60ae927-b429-42b2-b100-775fb8d3f8ff")
+		)
+		(pin "2"
+			(uuid "932a5499-c1b6-479b-8b5b-95dcf75d5778")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:C")
+		(at 391 92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4c8d54de-9b45-496f-8ece-2b3f877ab026")
+		(property "Reference" "C6"
+			(at 391 88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "100n / 50V"
+			(at 391 90.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 391 92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 391 92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 391 92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dbfd3cb6-b7ec-4d84-b5d2-732d1075d120")
+		)
+		(pin "2"
+			(uuid "13e8f23d-7033-4188-8c18-649585061cef")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:C")
+		(at 166 91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4e79c76a-029a-4bf4-86fd-016cc62924aa")
+		(property "Reference" "C4"
+			(at 166 87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "10u / 35V"
+			(at 166 89.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166 91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166 91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 166 91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "88fd65d9-e4f7-47ff-a9f6-7fb3522340bd")
+		)
+		(pin "2"
+			(uuid "025ef5aa-c8b3-4529-9596-8a0ac6c32c4b")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:R")
+		(at 202 161 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4f0e8849-e481-4faf-b969-8ecce4f76466")
+		(property "Reference" "R4"
+			(at 202 157 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "47k"
+			(at 202 159.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 202 161 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 202 161 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 202 161 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d5e5dd9c-bb5e-409f-bec7-65f4dad38b65")
+		)
+		(pin "2"
+			(uuid "06fcb846-a70b-4832-aeba-cc78068ab9ad")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:R")
+		(at 267 224 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5b232304-cef4-411f-841c-1d618414946b")
+		(property "Reference" "R5"
+			(at 267 220 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "56k"
+			(at 267 222.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 267 224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267 224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 267 224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0e5b1460-65f2-4af5-87cd-8106875abc9c")
+		)
+		(pin "2"
+			(uuid "c6040ae7-edf9-4595-884d-ba544f75b553")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:PUMP")
+		(at 366 62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7452d13e-4b09-4a32-a9db-22f4ccc45079")
+		(property "Reference" "J4"
+			(at 381 56.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "AEO 12-24V"
+			(at 381 59.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 366 62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 366 62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 366 62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "61b81e52-136d-48c9-9e62-feb28264a5ad")
+		)
+		(pin "2"
+			(uuid "0b1aff24-6acc-4ef5-a9d6-5201c7c984e4")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:ARD")
+		(at 53 245 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7c300bb1-0d28-4a94-8304-7e4133aa0140")
+		(property "Reference" "J2"
+			(at 73 231 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "Arduino Uno pins"
+			(at 73 233.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 53 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "07bed0b1-64fe-4fb6-a485-7f11015ba77e")
+		)
+		(pin "2"
+			(uuid "6973da44-9c52-4f6d-a7c0-46294a7b61ec")
+		)
+		(pin "3"
+			(uuid "5802923d-cc60-4656-bb8a-4fb4ff0004bb")
+		)
+		(pin "4"
+			(uuid "2ad798ea-9264-4d91-8fc3-0c871bab05a0")
+		)
+		(pin "5"
+			(uuid "5f6d8f27-bd8a-4fe1-9100-59256623acc5")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:C")
+		(at 349 92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8000e03f-9fb8-4ebd-bf85-a2f72789816e")
+		(property "Reference" "C5"
+			(at 349 88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "100u / 35V"
+			(at 349 90.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 349 92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 349 92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 349 92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ba97a9b1-9c90-4037-8c46-cb808449fe9f")
+		)
+		(pin "2"
+			(uuid "3d3c034c-d0a7-4552-a697-867f52dc99cf")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:PNP")
+		(at 266 62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8223666a-e317-43ed-a31c-e510572d1e65")
+		(property "Reference" "Q1"
+			(at 277.5 53.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "TIP2955 PNP"
+			(at 277.5 56.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 266 62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266 62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 266 62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "E"
+			(uuid "2fa746f4-9c9a-43cd-8632-93d7a2b94f7e")
+		)
+		(pin "B"
+			(uuid "c744a85d-53e1-48df-accc-10b8d3b7a6ad")
+		)
+		(pin "C"
+			(uuid "064b047e-f9d0-474b-a168-c80e57136c5b")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:FUSE")
+		(at 101 61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "837dbcfc-87ee-47d3-9c4f-1dc1f732e797")
+		(property "Reference" "F1"
+			(at 101 56.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "Fuse - TBD"
+			(at 101 59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101 61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101 61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 101 61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4113e7c7-a327-4f5a-b8b2-c2fe3f982424")
+		)
+		(pin "2"
+			(uuid "c40bc7ca-599b-4487-a926-4d15f653f0e1")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:R")
+		(at 267 245 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8e798d69-913b-41ca-a1d6-61ed2418df2b")
+		(property "Reference" "R10"
+			(at 267 241 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 267 243.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 267 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 267 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "20f7015c-c98a-42be-83b5-f6b538be097a")
+		)
+		(pin "2"
+			(uuid "ae39c10e-17d8-4f71-8ec1-12aa6dec49f6")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:C")
+		(at 202 184 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a25e11d2-e34c-490a-955e-67a3326c8615")
+		(property "Reference" "C8"
+			(at 202 180 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "470p optional"
+			(at 202 182.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 202 184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 202 184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 202 184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2fd6a8bb-b0ec-4eb0-af72-15e5fdc36a68")
+		)
+		(pin "2"
+			(uuid "88d476f4-a185-49ab-95fc-ac979665f03f")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:R")
+		(at 202 143 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a422addf-b6ab-492e-91a0-48c129be3511")
+		(property "Reference" "R3"
+			(at 202 139 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 202 141.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 202 143 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 202 143 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 202 143 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "56991e98-0eb7-4a09-a1dc-fd4d27c2e09d")
+		)
+		(pin "2"
+			(uuid "1fcf7a33-9dc3-4206-a593-97e555cb6c53")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:R")
+		(at 265 92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a7e4dfa1-e8e4-4ca7-a2a2-2bfe640107aa")
+		(property "Reference" "R1"
+			(at 265 88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 265 90.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 265 92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 265 92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 265 92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f903c63c-5b34-4c15-a5e2-6c65556ce087")
+		)
+		(pin "2"
+			(uuid "9b8764f2-d8b4-4585-9400-f4f8eb5af05c")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:SENSOR")
+		(at 370 243 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a90d3df1-1af8-4083-b2bf-9c197f5e443e")
+		(property "Reference" "J3"
+			(at 386.5 233 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "DIGITEN FL-408NPT"
+			(at 386.5 235.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 370 243 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 370 243 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 370 243 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3c1ddd03-ffb7-4c3f-9cbf-e870818bcba9")
+		)
+		(pin "2"
+			(uuid "0594a47a-3656-4605-a611-0d5a66fc2a61")
+		)
+		(pin "3"
+			(uuid "388b5c10-b412-4e86-9069-148c7d988998")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:SW")
+		(at 166 61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b00026b9-5123-4ced-aa0b-bafb8f7cb65a")
+		(property "Reference" "S1"
+			(at 166 56.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "DC ON/OFF"
+			(at 166 59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166 61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166 61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 166 61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f22168ac-45a5-4b1e-a649-c4feabe1fb01")
+		)
+		(pin "2"
+			(uuid "ed587174-aea2-4c52-a847-2739e7cde568")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "S1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:C")
+		(at 118 91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b63fb67f-bd0b-48b9-97cb-8afa6f99b8f9")
+		(property "Reference" "C3"
+			(at 118 87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "100n / 50V"
+			(at 118 89.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118 91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118 91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 118 91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3284c203-6abf-4fbf-bcce-0b1141fc9246")
+		)
+		(pin "2"
+			(uuid "bc9a6ada-d20d-4692-9d75-a828a985e5d2")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:R")
+		(at 357 266 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bf9b13e2-a5f9-49f8-ae3c-76d1dc7a04bc")
+		(property "Reference" "R11"
+			(at 357 262 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "4.7k D2 pullup"
+			(at 357 264.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 357 266 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 357 266 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 357 266 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ce2dbf18-7e60-465b-a310-bffde9dab2c8")
+		)
+		(pin "2"
+			(uuid "a546ee54-d238-4940-8ab3-6872b837f7a5")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:C")
+		(at 130 245 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cdaf8918-fdab-4e71-8dfd-8d9022edc77c")
+		(property "Reference" "C1"
+			(at 130 241 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "22u"
+			(at 130 243.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 130 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "98d64c3e-cdb8-4607-bd2f-8eb38b36b8af")
+		)
+		(pin "2"
+			(uuid "25bbff92-75cd-4c74-b5d1-b5d0bcf0f149")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:LM358")
+		(at 118 161 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dfa9a52c-fc48-4b54-90c0-882b5fc92455")
+		(property "Reference" "U1"
+			(at 135.5 146.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "LM358 DIP-8"
+			(at 135.5 149.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118 161 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118 161 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 118 161 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "2fe9d1e3-22d1-4caf-af69-111a4663efc8")
+		)
+		(pin "2"
+			(uuid "5875112a-f925-49ee-8557-aad8465d0b8d")
+		)
+		(pin "1"
+			(uuid "99c71512-0b12-4f18-83c5-9ddde619ef0b")
+		)
+		(pin "8"
+			(uuid "4f8a4db9-44cb-4f63-b2b6-193a46b2c6fe")
+		)
+		(pin "4"
+			(uuid "425a00d2-1457-4077-be7f-50d320ceb6f9")
+		)
+		(pin "5"
+			(uuid "449d1734-8840-45d1-8db1-907690361fcd")
+		)
+		(pin "6"
+			(uuid "b2ebc8af-1743-4165-a346-6ad37f6c9fa7")
+		)
+		(pin "7"
+			(uuid "0e74e4f5-a81a-4722-94c1-cf4f348d6a4a")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:R")
+		(at 178 224 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e594f1f0-48c4-40e3-8d58-0b49a79f3ee0")
+		(property "Reference" "R8"
+			(at 178 220 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 178 222.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 178 224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 178 224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 178 224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "141a1f7c-1d64-47e8-a390-a5ebd30b4aec")
+		)
+		(pin "2"
+			(uuid "11578bb0-4679-4035-9995-1dacb52082b2")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:R")
+		(at 130 224 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f583af50-67a9-4d3e-a057-a7d3e60b204e")
+		(property "Reference" "R7"
+			(at 130 220 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 130 222.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130 224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130 224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 130 224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "30f43b6f-c021-47f6-98f5-777c7df87b5e")
+		)
+		(pin "2"
+			(uuid "d7b29ffe-402c-4368-9d82-8f68d47c0e01")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:C")
+		(at 178 245 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ff653aaa-5173-4000-808d-c6789debcd15")
+		(property "Reference" "C2"
+			(at 178 241 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "22u"
+			(at 178 243.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 178 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 178 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 178 245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "150a2045-9272-44d6-a2ee-2394aa31260b")
+		)
+		(pin "2"
+			(uuid "e0c365a2-994e-4125-b226-a1f964ef8c4c")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Capstone:NPN")
+		(at 299 146 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ff9962b9-3f84-4498-b72f-013f6bca8e21")
+		(property "Reference" "Q2"
+			(at 310.5 137.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Value" "2N2222"
+			(at 310.5 140.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.13 1.13)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 299 146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 299 146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 299 146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "B"
+			(uuid "c03faa27-2082-4a2e-98ab-0d63059e312f")
+		)
+		(pin "E"
+			(uuid "b572ab48-cbc8-44c2-bae5-76abe8a45038")
+		)
+		(pin "C"
+			(uuid "37a2abac-8407-4320-b798-fe26b3fae3be")
+		)
+		(instances
+			(project "Fish_Flow_One_Pump_FL408NPT"
+				(path "/8d7a4bfe-7a7c-41d5-951e-5c9c92694499"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
